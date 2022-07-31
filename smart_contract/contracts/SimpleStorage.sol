@@ -2,13 +2,13 @@
 pragma solidity ^0.8.9;
 
 contract SimpleStorage {
-    uint256 favoriteNumber;
+    uint256 private favoriteNumber;
     struct People {
         string name;
         uint256 favoriteNumber;
     }
-    mapping(string => uint256) nameToFavoriteNumber;
-    People[] people;
+    mapping(string => uint256) private nameToFavoriteNumber;
+    People[] private people;
 
     function storeFavoriteNumber(uint256 _favoriteNumber) public {
         favoriteNumber = _favoriteNumber;
