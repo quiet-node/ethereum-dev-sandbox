@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-
 contract Messages {
     string public message;
 
@@ -16,6 +15,4 @@ contract Messages {
     function updateMessage(string memory _message) public {
         message = _message;
     }
-
 }
-
