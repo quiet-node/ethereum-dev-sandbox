@@ -13,6 +13,7 @@ contract Contract00Messages {
 
     function updateMessage(string memory _message) public  {
         message = _message;
+        emit messageChanged(message);
     }
 
     function getMessage() public view returns (string memory) {
