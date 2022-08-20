@@ -12,7 +12,7 @@ const config: HardhatUserConfig = {
     goerli: {
       url: GOERLI_RPC_URL,
       accounts: [PRIVATE_KEY as string],
-      chainId: 420,
+      chainId: 5,
     },
   },
 };
