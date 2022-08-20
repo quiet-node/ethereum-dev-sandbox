@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-contract C00Messages {
+contract C_00_Messages {
     string public message;
 
     event messageChanged (string _message);
