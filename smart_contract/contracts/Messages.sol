@@ -1,10 +1,17 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.4;
 
 contract Messages {
-    string public message;
+    string private message;
+
+    event messageChanged (string _message);
 
     constructor(string memory _message) {
+        message = _message;
+        emit messageChanged(message);
+    }
+
+    function updateMessage(string memory _message) public  {
         message = _message;
     }
 
@@ -12,7 +19,4 @@ contract Messages {
         return message;
     }
 
-    function updateMessage(string memory _message) public {
-        message = _message;
-    }
 }
