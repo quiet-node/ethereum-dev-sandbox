@@ -13,7 +13,7 @@ contract C_02_InsecureEtherVault {
         userBalances[msg.sender] += msg.value;
     }
 
-    function widthdrawAll() external {
+    function withdrawAll() external {
         if (userBalances[msg.sender] <= 0) revert e__InsufficientBalance();
         (bool success, ) = msg.sender.call{value: userBalances[msg.sender]}("");
         require(success, "Failed to send Ether");
