@@ -9,7 +9,7 @@ contract C_01_Storage {
         string name;
         uint256 luckyNumber;
     }
-    People[] private people;
+    People[] public people;
 
     function storeLuckyNumber(string memory _name, uint256 _luckyNumber) public {
         nameToLuckyNumber[_name] = _luckyNumber;
