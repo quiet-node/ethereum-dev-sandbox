@@ -2,7 +2,7 @@
 pragma solidity ^0.8.9;
 
 error Storage__nameNotFound(string name);
-contract Storage {
+contract C01Storage {
     mapping(string => uint256) private nameToLuckyNumber;
     
     struct People {
