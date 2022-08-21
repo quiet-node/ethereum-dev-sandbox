@@ -4,7 +4,7 @@ currently WIP...
 
 An ethereum playground powered on top of the [hardhat](https://hardhat.org/) framework and [ethers.js](https://docs.ethers.io/v5/) library. `Smart contracts` are written in [solidity](https://docs.soliditylang.org/en/latest/) language and thoroughly tested using the [chai.js](https://www.chaijs.com/) unit testing framework.
 
-The contracts' source code are published on the **_Görli_** ethereum testnet and verified on [etherscan.io](https://goerli.etherscan.io/) using [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan). See [Verified on Etherscan](https://github.com/logann131/ethereum-dev-sandbox#verified-on-etherscanio) for the list of verified contracts.
+The contracts' source code are published on the **_Görli_** ethereum testnet and verified on [etherscan.io](https://goerli.etherscan.io/) using [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan). See [Verified on Etherscan](https://github.com/logann131/ethereum-dev-sandbox#verified-on-etherscan) for the list of verified contracts.
 
 # Getting Started
 
@@ -30,7 +30,7 @@ yarn
 - create a `.env` file using the `.example.env` as the template and fill out the variables.
   - `PRIVATE_KEY:` The private key of your [metamask](https://metamask.io/) account. See [Helpers.PRIVATE-KEY](https://github.com/logann131/ethereum-dev-sandbox#1-how-to-export-private_key-from-your-metamask) on how to export your `PRIVATE KEY`. NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT AND DO NOT SHARE YOUR PRIVATE KEY.
   - `GOERLI_RPC_URL`: This is url of the `goerli` testnet node you're working with then deploy the `smart contracts` to. Setup with one for free from [Alchemy](https://www.alchemy.com/). See [Helpers.GOERLI-RPC-URL](https://github.com/logann131/ethereum-dev-sandbox#2-how-to-export-a-goerli_rpc_url-from-alchemy) on how to export a `GOERLI_RPC_URL` from [Alchemy](https://www.alchemy.com/).
-  - `COINMARKETCAP_API_KEY`: This is mainly for the `hardhat-gas-report` pluggin so this is optional. If you want to play with `hardhat-gas-report` pluggin, first go to `hardhat.config.ts`, toggle the `gasReporter.enabled` to true. Then see [Helpers.COINMARKETCAP_API_KEY]() on how to export your `COINMARKETCAP_API_KEY`
+  - `COINMARKETCAP_API_KEY`: This is mainly for the `hardhat-gas-report` pluggin so this is optional. If you want to play with `hardhat-gas-report` pluggin, first go to `hardhat.config.ts`, toggle the `gasReporter.enabled` to true. Then see [Helpers.COINMARKETCAP_API_KEY](https://github.com/logann131/ethereum-dev-sandbox#3-how-to-export-a-coinmarketcap_api_key-from-coinmarketcap) on how to export your `COINMARKETCAP_API_KEY`
 
 #### 2. Get testnet `Goerli ETH`
 
