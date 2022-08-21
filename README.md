@@ -4,7 +4,7 @@ currently WIP...
 
 An ethereum playground powered on top of the [hardhat](https://hardhat.org/) framework and [ethers.js](https://docs.ethers.io/v5/) library. `Smart contracts` are written in [solidity](https://docs.soliditylang.org/en/latest/) language and thoroughly tested using the [chai.js](https://www.chaijs.com/) unit testing framework.
 
-The contracts' source code are published on the **_Görli_** ethereum testnet and verified on [etherscan.io](https://goerli.etherscan.io/) using [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan). See [Verified on etherscan.io](https://github.com/logann131/ethereum-dev-sandbox#verified-on-etherscanio) for the list of verified contracts.
+The contracts' source code are published on the **_Görli_** ethereum testnet and verified on [etherscan.io](https://goerli.etherscan.io/) using [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan). See [Verified on Etherscan](https://github.com/logann131/ethereum-dev-sandbox#verified-on-etherscanio) for the list of verified contracts.
 
 # Getting Started
 
@@ -97,7 +97,7 @@ npx hardhat verify --network goerli DEPLOYED_CONTRACT_ADDRESS "Constructor argum
 - Now, go to the app you just created. Find and click on the `VIEW KEY` button top-right.
 - The `URL` under `HTTPS` is the `GOERLI_RPC_URL` you want.
 
-# Verified on [etherscan.io](https://goerli.etherscan.io/)
+# Verified on [Etherscan](https://goerli.etherscan.io/)
 
 - [C_00_Messages.goerli.etherscan.io](https://goerli.etherscan.io/address/0x7E913454210c4C0459146F69BF1c0C1bE59B811C#code)
 - [C_01_Storage.goerli.etherscan.io](https://goerli.etherscan.io/address/0x9a2074296da58eEDA0746900ac819Ca3bA1F7735#code)
