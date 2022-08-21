@@ -31,14 +31,35 @@ yarn
 
 - create a `.env` file using the `.example.env` as the template and fill out the variables.
   - `PRIVATE_KEY:` The private key of your [metamask](https://metamask.io/) account. See [Helpers.PRIVATE-KEY](https://github.com/logann131/ethereum-dev-sandbox#1-how-to-export-private_key-from-your-metamask) on how to export your `PRIVATE KEY`. NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT AND DO NOT SHARE YOUR PRIVATE KEY.
-  - `GOERLI_RPC_URL`: This is url of the `goerli` testnet node you're working with. Setup with one for free from [Alchemy](https://www.alchemy.com/). See [Helpers.GOERLI-RPC-URL](https://github.com/logann131/ethereum-dev-sandbox#2-how-to-export-a-goerli_rpc_url-from-alchemy) on how to export a `GOERLIRPC_URL` from [Alchemy](https://www.alchemy.com/).
+  - `GOERLI_RPC_URL`: This is url of the `goerli` testnet node you're working with then deploy the `smart contracts` to. Setup with one for free from [Alchemy](https://www.alchemy.com/). See [Helpers.GOERLI-RPC-URL](https://github.com/logann131/ethereum-dev-sandbox#2-how-to-export-a-goerli_rpc_url-from-alchemy) on how to export a `GOERLIRPC_URL` from [Alchemy](https://www.alchemy.com/).
 
 #### 2. Get testnet `Goerli ETH`
 
 - Head to [Goerli Faucet](https://goerlifaucet.com/)
 - Sign into the site using the [Alchemy](https://www.alchemy.com/) account you've created for the `GOERLI_RPC_URL`
-- Paste your [metamask](https://metamask.io/) `PUBLIC_KEY` a.k.a `account address` (not `PRIVATE_KEY`)
+- Paste your [metamask](https://metamask.io/) `PUBLIC_KEY` a.k.a `account's address` (not `PRIVATE_KEY`)
 - Hit `Send Me ETH` to get some free `Goerli ETH`. 0.5 `Goerli ETH` should show up in your [metamask](https://metamask.io/) account
+
+#### 3. Compile smart contracts
+
+- Run `yarn hardhat compile`
+
+#### 4. Test smart contracts
+
+- Run `yarn hardhat test`
+
+#### 5.1 Deploy smart contracts to Goerli Testnet
+
+- Run `yarn hardhat run scripts --network goerli`
+
+#### 5.2 Deploy smart contracts to localhost/hardhat network
+
+- Run `yarn hardhat node` then leave this terminal session open. This will set of a list of 20 fake ethereum accounts with fake ethereum to serve testing purposes
+- Open new terminal session, run `yarn hardhat run scripts --network hardhat`
+
+#### 6. Verify smart contracts on [etherscan](https://goerli.etherscan.io/)
+
+- run `npx hardhat verify --network goerli DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"`
 
 # Helpers
 
