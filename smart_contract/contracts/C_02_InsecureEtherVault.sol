@@ -14,7 +14,8 @@ contract C_02_InsecureEtherVault {
     }
 
     function withdrawAll() external {
-        if (userBalances[msg.sender] <= 0) revert e__InsufficientBalance();
+        // if (userBalances[msg.sender] <= 0) revert e__InsufficientBalance();
+        require(userBalances[msg.sender] > 0, "Insufficient Balance");
         (bool success, ) = msg.sender.call{value: userBalances[msg.sender]}("");
         require(success, "Failed to send Ether");
 
