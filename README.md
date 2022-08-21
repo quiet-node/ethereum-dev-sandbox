@@ -4,7 +4,7 @@ currently WIP...
 
 An ethereum playground powered on top of the [hardhat](https://hardhat.org/) framework and [ethers.js](https://docs.ethers.io/v5/) library. `Smart contracts` are written in [solidity](https://docs.soliditylang.org/en/latest/) language and thoroughly tested using the [chai.js](https://www.chaijs.com/) unit testing framework.
 
-The `contracts' source code` (see [Verified on etherscan.io](https://github.com/logann131/ethereum-dev-sandbox#verified-on-etherscanio)) are published on the **_Görli_** ethereum testnet and verified on [etherscan.io](https://goerli.etherscan.io/) using [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan).
+The contracts' source code are published on the **_Görli_** ethereum testnet and verified on [etherscan.io](https://goerli.etherscan.io/) using [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan). See [Verified on etherscan.io](https://github.com/logann131/ethereum-dev-sandbox#verified-on-etherscanio) for the list of verified contracts.
 
 # Getting Started
 
