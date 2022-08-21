@@ -1,6 +1,6 @@
 import { ethers } from 'hardhat';
 
-const main = async () => {
+const D_00_deploy = async () => {
   const Messages = await ethers.getContractFactory('C_00_Messages');
   const messages = await Messages.deploy('Hello, Messages!');
 
@@ -9,7 +9,4 @@ const main = async () => {
   console.log(`Messages deployed to: ${messages.address}`);
 };
 
-main().catch((e: any) => {
-  console.error(e);
-  process.exitCode = 1;
-});
+export default D_00_deploy;

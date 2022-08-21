@@ -1,7 +1,7 @@
 import { Contract, ContractFactory } from 'ethers';
 import { ethers } from 'hardhat';
 
-const main = async () => {
+const D_02_deploy = async () => {
   const InsecureEtherVault: ContractFactory = await ethers.getContractFactory(
     'C_02_InsecureEtherVault'
   );
@@ -10,7 +10,4 @@ const main = async () => {
   console.log(`InsecureEtherVault deployed to: ${insecureEtherVault.address}`);
 };
 
-main().catch((e: any) => {
-  console.error(e);
-  process.exitCode = 1;
-});
+export default D_02_deploy;
