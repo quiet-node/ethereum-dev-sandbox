@@ -40,25 +40,25 @@ yarn
 - Paste your [metamask](https://metamask.io/) `PUBLIC_KEY` a.k.a `account's address` (not `PRIVATE_KEY`)
 - Hit `Send Me ETH` to get some free `Goerli ETH`. Now, `0.5 Goerli ETH` should show up in your [metamask](https://metamask.io/) account
 
-#### 3. Compile smart contracts
+#### 3. `Compile` smart contracts
 
 ```
 yarn hardhat compile
 ```
 
-#### 4. Test smart contracts
+#### 4. `Test` smart contracts
 
 ```
 yarn hardhat test
 ```
 
-#### 5.1 Deploy smart contracts to Goerli Testnet
+#### 5.1 `Deploy` smart contracts to `Goerli Testnet`
 
 ```
 yarn hardhat run scripts --network goerli
 ```
 
-#### 5.2 Deploy smart contracts to localhost/hardhat network
+#### 5.2 `Deploy` smart contracts to `localhost/hardhat network`
 
 ```
 yarn hardhat node
@@ -72,7 +72,7 @@ then leave this terminal session open. This will set of a list of 20 fake ethere
 yarn hardhat run scripts --network hardhat
 ```
 
-#### 6. Verify smart contracts on [etherscan](https://goerli.etherscan.io/)
+#### 6. `Verify` smart contracts on [etherscan](https://goerli.etherscan.io/)
 
 ```
 npx hardhat verify --network goerli DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
