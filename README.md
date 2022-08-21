@@ -25,7 +25,7 @@ yarn
 ## Running the project
 1. Set environment variables
 - create a `.env` file using the `.example.env` as the template and fill out the variables.
-  - `PRIVATE_KEY:` The private key of your account ([Helpers.PRIVATE-KEY](https://github.com/logann131/ethereum-dev-sandbox/edit/master/README.md#1-how-to-retrieve-private_key-from-your-metamask)). NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT AND DO NOT SHARE YOUR PRIVATE KEY.
+  - `PRIVATE_KEY:` The private key of your account ([Helpers.PRIVATE-KEY](https://github.com/logann131/ethereum-dev-sandbox#1-how-to-retrieve-private_key-from-your-metamask)). NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT AND DO NOT SHARE YOUR PRIVATE KEY.
   
   
 
