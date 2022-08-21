@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from 'hardhat/config';
 import '@nomicfoundation/hardhat-toolbox';
+import '@nomiclabs/hardhat-etherscan';
 import 'dotenv/config';
 
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL;
