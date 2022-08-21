@@ -67,5 +67,11 @@ describe('InsecureEtherVault Contract', () => {
 
       expect(await insecureEtherVaultContract.getTotalBalance()).eq(userBValue);
     });
+
+    it('Should fail if userBalance = 0', async () => {
+      await expect(
+        insecureEtherVaultContract.connect(userA).withdrawAll()
+      ).to.be.revertedWith('Insufficient Balance');
+    });
   });
 });
