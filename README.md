@@ -55,7 +55,7 @@ yarn hardhat test
 #### 5.1 `Deploy` smart contracts to `Goerli Testnet`
 
 ```
-yarn hardhat run scripts --network goerli
+yarn hardhat run scripts/deploy.ts --network goerli
 ```
 
 #### 5.2 `Deploy` smart contracts to `localhost/hardhat network`
