@@ -25,7 +25,7 @@ yarn
 ## Running the project
 #### 1. Set environment variables
 - create a `.env` file using the `.example.env` as the template and fill out the variables.
-  - `PRIVATE_KEY:` The private key of your account. See [Helpers.PRIVATE-KEY](https://github.com/logann131/ethereum-dev-sandbox#1-how-to-retrieve-private_key-from-your-metamask) on how to export your `PRIVATE KEY`. NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT AND DO NOT SHARE YOUR PRIVATE KEY.
+  - `PRIVATE_KEY:` The private key of your [metamask](https://metamask.io/) account. See [Helpers.PRIVATE-KEY](https://github.com/logann131/ethereum-dev-sandbox#1-how-to-export-private_key-from-your-metamask) on how to export your `PRIVATE KEY`. NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT AND DO NOT SHARE YOUR PRIVATE KEY.
   - `GOERLI_RPC_URL`: This is url of the `goerli` testnet node you're working with. Setup with one for free from [Alchemy](https://www.alchemy.com/). See [Helpers.GOERLI-RPC-URL](https://github.com/logann131/ethereum-dev-sandbox#2-how-to-export-a-goerli_rpc_url-from-alchemy) on how to export a `GOERLIRPC_URL` from [Alchemy](https://www.alchemy.com/).
   
   
