@@ -1,6 +1,6 @@
-# eth-sandbox
+# ethereum development sandbox
 
-Decentralized Apps play ground
+An ethereum play-ground whic is powered on top of the [Hardhat](https://hardhat.org/) framework and [ethers.js](https://docs.ethers.io/v5/) library. Smart contracts are written in [solidity](https://docs.soliditylang.org/en/latest/) language and thoroughly tested using the [chai.js](https://www.chaijs.com/) unit testing framework. The contracts' source code are published on the ***Görli*** ethereum testnet and verified on [Etherscan](https://goerli.etherscan.io/). 
 
 ## Interacting with the contracts from Hardhat Console
 
