@@ -102,7 +102,7 @@ npx hardhat verify --network goerli DEPLOYED_CONTRACT_ADDRESS "Constructor argum
 ### 3. How to export a `COINMARKETCAP_API_KEY` from [coinmarketcap](https://coinmarketcap.com/)
 
 - Go [here](https://coinmarketcap.com/api/pricing/) and pick the first plan, `GET FREE API KEY`.
-- Signup with your email then sign into [coinmarketcap](https://coinmarketcap.com/)
+- Signup with your email then sign into [coinmarketcap](https://pro.coinmarketcap.com/account)
 - Now copy the API Key there and paste it to your `.env` file under `COINMARKETCAP_API_KEY`
 
 # Verified on [Etherscan](https://goerli.etherscan.io/)
