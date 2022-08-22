@@ -74,7 +74,7 @@ yarn hardhat run scripts --network hardhat
 #### 6. `Verify` smart contracts on [etherscan](https://goerli.etherscan.io/)
 
 ```
-npx hardhat verify --network goerli DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+yarn hardhat verify --network goerli DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
 ```
 
 # Helpers
