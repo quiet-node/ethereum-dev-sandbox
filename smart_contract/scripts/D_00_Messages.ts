@@ -6,7 +6,7 @@ const D_00_deploy = async () => {
 
   await messages.deployed();
 
-  console.log(`Messages deployed to address: ${messages.address}`);
+  console.log(`Messages deployed to the address: ${messages.address}`);
 };
 
 export default D_00_deploy;
