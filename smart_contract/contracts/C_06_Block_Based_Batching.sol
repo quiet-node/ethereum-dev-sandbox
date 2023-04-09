@@ -2,6 +2,10 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+// In this example, a user can swap tokenA for tokenB at a fixed rate of 100. An attacker can exploit this contract by watching the transaction pool (mempool) 
+// for swap transactions and front-running them. When they see a profitable swap transaction, they submit their own swap transaction with a higher gas price, 
+// which is likely to be processed before the original transaction.
+
 contract BatchedTokenSwap {
     IERC20 public tokenA;
     IERC20 public tokenB;
