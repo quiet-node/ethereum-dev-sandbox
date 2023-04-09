@@ -6,6 +6,32 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // for swap transactions and front-running them. When they see a profitable swap transaction, they submit their own swap transaction with a higher gas price, 
 // which is likely to be processed before the original transaction.
 
+contract VulnerableTokenSwap {
+    ERC20 public tokenA;
+    ERC20 public tokenB;
+
+    constructor(ERC20 _tokenA, ERC20 _tokenB) {
+        tokenA = _tokenA;
+        tokenB = _tokenB;
+    }
+
+    function swap(uint256 amount) external {
+        uint256 rate = getRate(amount);
+        require(tokenA.transferFrom(msg.sender, address(this), amount), "Transfer failed");
+        require(tokenB.transfer(msg.sender, amount * rate), "Transfer failed");
+    }
+
+    function getRate(uint256 amount) public view returns (uint256) {
+        // simplified calculation based on liquidity pools, etc.
+        return 100;
+    }
+}
+
+
+// In this modified version, users can only submit swap requests during a batch's duration. The actual token swaps are processed in a separate function processBatch(),
+// which can only be called once the current batch has ended. This approach reduces the advantage of front-running by making it less predictable which transactions 
+// will be processed first.
+
 contract BatchedTokenSwap {
     IERC20 public tokenA;
     IERC20 public tokenB;
