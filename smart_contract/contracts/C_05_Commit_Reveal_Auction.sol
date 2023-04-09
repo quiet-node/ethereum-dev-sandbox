@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-//This contract is vulnerable to front-running attacks, as an attacker can monitor the mempool for new bids and submit their own bid with a slightly 
+// This contract is vulnerable to front-running attacks, as an attacker can monitor the mempool for new bids and submit their own bid with a slightly 
 // higher value and a higher gas price. This increases the likelihood that their transaction will be processed before the original one, effectively 
 // outbidding the original bidder.
 
